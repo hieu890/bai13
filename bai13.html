@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Tiers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #e7f3ff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .panel.pricing-table {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+      }
+
+      .pricing-plan {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        transition: transform 0.3s ease;
+      }
+
+      .pricing-plan:hover {
+        transform: translateY(-5px);
+      }
+
+      .pricing-img {
+        width: 60px;
+        margin: 0 auto 20px;
+      }
+
+      .pricing-header {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        font-weight: 700;
+        color: #333;
+      }
+
+      .pricing-features {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+
+      .pricing-features-item {
+        font-size: 1rem;
+        color: #666;
+        margin: 5px 0;
+      }
+
+      .pricing-price {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #007bff;
+        margin: 20px 0;
+      }
+
+      .pricing-button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: #007bff;
+        color: #ffffff;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+
+      .pricing-button:hover {
+        background-color: #0056b3;
+      }
+
+      .pricing-button.is-featured {
+        background-color: #ff5722;
+      }
+
+      .pricing-button.is-featured:hover {
+        background-color: #e64a19;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel pricing-table">
+      <div class="pricing-plan">
+        <img src="icon1.png" alt="Personal Icon" class="pricing-img" />
+        <h2 class="pricing-header">Personal</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Custom domains</li>
+          <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+        </ul>
+        <span class="pricing-price">Free</span>
+        <a href="#/" class="pricing-button">Sign up</a>
+      </div>
+
+      <div class="pricing-plan">
+        <img src="icon2.png" alt="Small Team Icon" class="pricing-img" />
+        <h2 class="pricing-header">Small Team</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Never sleeps</li>
+          <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+        </ul>
+        <span class="pricing-price">$150</span>
+        <a href="#/" class="pricing-button is-featured">Free trial</a>
+      </div>
+
+      <div class="pricing-plan">
+        <img src="icon1.png" alt="Enterprise Icon" class="pricing-img" />
+        <h2 class="pricing-header">Enterprise</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Dedicated</li>
+          <li class="pricing-features-item">Simple horizontal scalability</li>
+        </ul>
+        <span class="pricing-price">$400</span>
+        <a href="#/" class="pricing-button">Free trial</a>
+      </div>
+    </div>
+  </body>
+</html>
